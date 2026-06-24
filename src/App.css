@@ -1,0 +1,21 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+#root{
+  --bg: #0A1020;
+  --sidebar: #3F444E;
+  --cards: #252D45;
+  --text: #F4F3FF;
+  --sec-text: #B7B9D3;
+  --primary-accent: #8E6CF5;
+  --sec-accent: #C26ACF;
+  --highlight: #6FC3E8;
+  --sec-highlight: #3E356A;
+}

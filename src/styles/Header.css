@@ -1,0 +1,10 @@
+.profile-header{
+    margin: 1rem;
+}
+
+.pfp{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+    background-color: var(--sec-accent);
+}
