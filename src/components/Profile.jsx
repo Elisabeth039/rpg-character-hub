@@ -1,8 +1,8 @@
 import { useState, useEffect} from 'react';
-import logo from '../assets/logo.png';
+import bar from '../assets/XPBar.png';
+import crystalFrame from '../assets/crystal-frame.png'
 import '../App.css'; 
 import '../styles/Profile.css';
-
 export default function Profile ({profileOpen, setProfileOpen}) {
 
     const [level, setLevel] = useState(0);
@@ -26,12 +26,22 @@ export default function Profile ({profileOpen, setProfileOpen}) {
             <div className='user-info'>
                 <div className='pfp-name'>
                     <div className='pfp'></div>
+                    <img
+                    src={crystalFrame}
+                    alt='Crystal frame'
+                    className='frame'
+                    />
                     <p className='username'>Username</p>
                 </div>
                 <div className='xp-bar-lvl'>
                     <div className='xp-bar'>
+                        <div
+                        className='xp-fill'
+                        style={{ 
+                        width: `${xp}%`}}
+                        ></div>
                         <img 
-                        src={logo}
+                        src={bar}
                         alt='XP bar'
                         className='bar-img'
                         />
@@ -40,6 +50,25 @@ export default function Profile ({profileOpen, setProfileOpen}) {
                 </div>
                 <button onClick={() => gainXP()}>Gain xp</button>
                 <p>{xp}</p>
+                <div className='attributes'>
+                    <p className='attr-label'>Attributes</p>
+                    <div className='attr-ul'>
+                      <div className='attr-names'>
+                        <ul className='attr-name'>
+                            <li>📜Knowledge</li>
+                            <li>⚒Craftsmanship</li>
+                            <li>💰Stewardship</li>
+                            <li>❤Vitality</li>
+                        </ul>
+                      </div>
+                        <ul className='attr-lvls'>
+                            <li>knowLvl</li>
+                            <li>craftLvl</li>
+                            <li>stewardLvl</li>
+                            <li>vitalLvl</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -1,10 +1,43 @@
 .profile-header{
     margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
 }
 
-.pfp{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50px;
-    background-color: var(--sec-accent);
+.badges{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+.slot{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 7rem;
+    width: 10rem;
+    align-content: center;
+}
+
+.badge{
+    display: flex;
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    top:3.4rem;
+    align-self: center;
+    border: 1px solid var(--bg);
+    border-radius: 8px;
+    z-index: 10;
+    background-color: rgb(155, 155, 255);
+}
+
+.shelf{
+    scale:1.8;
+    position: relative;
+    image-rendering: pixelated;
+    top: -1.6rem;
+    right: 0.7rem;
 }

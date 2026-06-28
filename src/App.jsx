@@ -8,16 +8,18 @@ export default function App () {
     const [profileOpen, setProfileOpen] = useState(false);
 
     return(
+        <>
+        <Profile
+            profileOpen={profileOpen}
+            setProfileOpen={setProfileOpen}
+            ></Profile>
         <div className='main-content'>
             <Header
             profileOpen={profileOpen}
             setProfileOpen={setProfileOpen}
             ></Header>
-            <Profile
-            profileOpen={profileOpen}
-            setProfileOpen={setProfileOpen}
-            ></Profile>
         </div>
+        </>
     )
 
 }
